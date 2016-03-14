@@ -15,6 +15,7 @@
 		108600411C7B136F0001F805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1086003F1C7B136F0001F805 /* LaunchScreen.storyboard */; };
 		1086004C1C7B136F0001F805 /* HGDQStarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1086004B1C7B136F0001F805 /* HGDQStarsTests.m */; };
 		108600571C7B136F0001F805 /* HGDQStarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108600561C7B136F0001F805 /* HGDQStarsUITests.m */; };
+		1086006A1C7B13C60001F805 /* HGDQStars.m in Sources */ = {isa = PBXBuildFile; fileRef = 108600691C7B13C60001F805 /* HGDQStars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		108600521C7B136F0001F805 /* HGDQStarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGDQStarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		108600561C7B136F0001F805 /* HGDQStarsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGDQStarsUITests.m; sourceTree = "<group>"; };
 		108600581C7B136F0001F805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108600681C7B13C60001F805 /* HGDQStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDQStars.h; sourceTree = "<group>"; };
+		108600691C7B13C60001F805 /* HGDQStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDQStars.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				108600371C7B136F0001F805 /* ViewController.h */,
 				108600381C7B136F0001F805 /* ViewController.m */,
 				1086003A1C7B136F0001F805 /* Main.storyboard */,
+				108600671C7B13B80001F805 /* HGDQStars */,
 				1086003D1C7B136F0001F805 /* Assets.xcassets */,
 				1086003F1C7B136F0001F805 /* LaunchScreen.storyboard */,
 				108600421C7B136F0001F805 /* Info.plist */,
@@ -138,6 +142,15 @@
 				108600581C7B136F0001F805 /* Info.plist */,
 			);
 			path = HGDQStarsUITests;
+			sourceTree = "<group>";
+		};
+		108600671C7B13B80001F805 /* HGDQStars */ = {
+			isa = PBXGroup;
+			children = (
+				108600681C7B13C60001F805 /* HGDQStars.h */,
+				108600691C7B13C60001F805 /* HGDQStars.m */,
+			);
+			path = HGDQStars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +220,6 @@
 				TargetAttributes = {
 					1086002D1C7B136F0001F805 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = A6CJBL77R4;
 					};
 					108600461C7B136F0001F805 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -276,6 +288,7 @@
 				108600391C7B136F0001F805 /* ViewController.m in Sources */,
 				108600361C7B136F0001F805 /* AppDelegate.m in Sources */,
 				108600331C7B136F0001F805 /* main.m in Sources */,
+				1086006A1C7B13C60001F805 /* HGDQStars.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +360,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -369,6 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0b495759-959a-4022-b460-d407b68b6d6b";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,7 +405,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -406,6 +420,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "0b495759-959a-4022-b460-d407b68b6d6b";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -416,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = HGDQStars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQStars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0b495759-959a-4022-b460-d407b68b6d6b";
 			};
 			name = Debug;
 		};
@@ -427,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = HGDQStars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQStars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0b495759-959a-4022-b460-d407b68b6d6b";
 			};
 			name = Release;
 		};
@@ -501,6 +522,7 @@
 				1086005D1C7B136F0001F805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1086005E1C7B136F0001F805 /* Build configuration list for PBXNativeTarget "HGDQStarsTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +531,7 @@
 				108600601C7B136F0001F805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		108600611C7B136F0001F805 /* Build configuration list for PBXNativeTarget "HGDQStarsUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +540,7 @@
 				108600631C7B136F0001F805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

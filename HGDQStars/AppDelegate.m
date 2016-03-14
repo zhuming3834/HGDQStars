@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  HGDQStars
 //
-//  Created by myhg on 16/2/22.
+//  Created by zhuming on 16/2/22.
 //  Copyright © 2016年 zhuming. All rights reserved.
 //
 
